@@ -1,0 +1,248 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/* --------------------------------------------------------The Navbar Decoration---------------------------------------------------------------------------------- */
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: rgb(5, 36, 121);
+    transition: 1s;
+    text-decoration: underline;
+}
+
+ .lists{ 
+    display:flex;
+    gap:30px;
+    list-style: none;
+    justify-content: flex-end;
+    margin-right:40px;
+    margin-top: 20px;
+    font-weight:500;
+} 
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+@media only screen and (max-width:500px) {
+    .lists{
+        display: none;
+    }
+
+    .Intro, .CardsContainer{
+        flex-direction: column;
+        
+    }
+    .CardsContainer{
+        justify-items: center;
+    }
+    .Intro_Img img{
+        height:20%;
+        width: 30%; 
+    }
+    
+
+
+
+}
+
+
+/* -----------------------------------------------------the intro section divided into 2 part text and image---------------------------------------------------- */
+.Intro{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    
+    /* background-color: #EDEDED; */
+
+}
+
+/* ---------------------------------------------------------the text part------------------------------------------------------------------------------------- */
+.Intro_Text{
+    width: 40%;
+    height:400px;
+}
+
+.Intro_Text h1{
+    font-size:53px;
+}
+
+.Intro_Text p{
+    line-height:25px;
+    font-size:19px;
+}
+
+/* ---------------------------------------------------------------the image section-------------------------------------------------------------------------------- */
+.Intro_Img img{
+    height:300px;
+    width: 500px;    
+}
+
+hr{
+    border: 1px solid black;
+}
+
+.Intro_Img img+hr{
+    margin-top:15px;
+    border: 0.1px solid black;
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+/* -----------------------------the common btn of know more--------------------------------------------------- */
+.Btn-km{
+    margin-top:20px;
+    padding:12px;
+    border: 2px solid #1746A2;
+    border-radius:15px;
+    background-color: #1746A2;
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+.Btn-km:hover{
+    /* background-color: #d8dce5; */
+    /* border-color: #03070e; */
+    /* color: #03070e; */
+    transform: scale(0.9);
+    transition: 1s;
+}
+
+.loginBtn{
+    border: #1746A2 solid 1px;
+    background-color: #1746A2;
+    color: #FFF7E9;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.loginBtn:hover{
+    transform: scale(1.1);
+}
+/* -------------------------------------------------------------------------------------------------------- */
+
+.active{
+    text-decoration: underline;
+}
+
+/* -----------------------------------The Subject Section-------------------------------------------------- */
+.subjects{
+    display: flex;
+    justify-content: center;
+}
+
+.subjects h1{
+    font-size:45px;
+    margin-bottom: 100px;
+}
+
+.CardsContainer{
+   display: flex;
+   justify-content:center;
+   gap: 20px;
+}
+
+.card{
+    width:300px;
+    border: 2px solid black;
+    border-radius: 30px 30px 0 0;
+    margin-bottom: 100px;
+    padding-bottom: 20px;
+    
+}
+
+.cardText hr{
+    border: 0.1px solid black ;
+}
+.card img{
+    height:200px;
+    width:290px;
+    border-radius:30px;
+    padding: 10px;
+}
+
+.cardText{
+    padding-left: 10px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+
+
+.FeedbackContainer{
+    display: flex;
+    justify-content: center;
+    /* margin-right:300px; */
+}
+
+
+
+.headingContactUs{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size:50px;
+}
+
+/* form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+} */
+
+/* form input{
+    background: radial-gradient(circle, rgba(232,232,227,1) 20%, rgba(227,227,211,1) 44%, rgba(211,213,201,1) 100%);
+    /* padding:15px; */
+    /* margin-top:20px;
+    border: 3px solid black;
+    border-radius:15px;
+} */
+/* form textarea{
+    background: radial-gradient(circle, rgba(232,232,227,1) 20%, rgba(227,227,211,1) 44%, rgba(211,213,201,1) 100%);
+    margin-top: 20px;
+    border: 3px solid black;
+    border-radius: 15px;
+    /* padding:15px; */
+/* }  */
+.Feedbackform{
+    display: flex;
+    width: 50vw;
+    height:550px;
+    justify-content: center;
+    border: 4px solid black;
+    margin-bottom: 100px;
+    padding-bottom:30px;
+    border-radius: 15px;
+}
+
+footer{
+    background-color: black;
+    color: #EDEDED;
+    padding:20px;
+    border-radius: 20px 20px 0 0;
+}
+footer hr{
+    margin-top:5px;
+    border: 1px solid #FFF7E9;
+}
